@@ -1,1 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
 
+.game-container {
+    background: #168b20;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.game-container h1 {
+    margin: 0 0 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #295d76;
+    transform: scale(1.05);
+}
+
+.game-info {
+    margin-top: 10px;
+}
+
+#resetBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6b6b;
+    color: #30152d;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#resetBtn:hover {
+    background-color: #ff4b4b;
+    transform: scale(1.05);
+}
+
+#gameStatus {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
